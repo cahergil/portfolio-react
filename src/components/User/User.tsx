@@ -1,22 +1,52 @@
 import React from 'react';
-import classesSass from './User.module.scss';
+import { Theme, withStyles } from '@material-ui/core';
+
+
+
 import Presentation from './Presentation/Presentation';
 import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
 import FeaturedWork from './FeaturedWork/FeaturedWork';
-import Navbar from './Navbar/Navbar';
+import Navbar from './Navigation/Navbar';
 import Location from './Location/Location';
 import ContactMe from './ContactMe/ContactMe';
 import Header from './Header/Header';
+import SideDrawer from './Navigation/SideDrawer';
+
+const styles = (theme: Theme) => ({
+  container: {
+    display: 'grid',
+    // default case when >550 && < 600
+    gridTemplateRows: 'calc(100vh - 4rem) repeat(5, min-content)',
+    [theme.breakpoints.up('sm')]: {
+      gridTemplateRows: 'calc(100vh - 6.4rem) repeat(5, min-content)'
+    },
+    [theme.breakpoints.down(550)]: {
+      gridTemplateRows: 'calc(100vh - 5.6rem) repeat(5, min-content)'
+    }
+    
+  }
+});
 
 const User = (props: any) => {
-  
+ 
+  const { classes } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  function handleDrawerToggle() {
+    console.log('andledrawtertoggle');
+    setMobileOpen(!mobileOpen);
+  }
+
   return (
     <React.Fragment>
       
-      {/* <Header /> */}
-      
-      <main className={classesSass.Container}>
+     
+      <Navbar burgerClicked={handleDrawerToggle}/>
+      <SideDrawer
+        mobileOpen={mobileOpen}
+        onClose={handleDrawerToggle} />
+      <main className={classes.container}>
         <Presentation />
         <AboutMe />
         <Skills />
@@ -28,4 +58,8 @@ const User = (props: any) => {
   );
 };
 
-export default User
+export default withStyles(styles)(User);
+// export default compose(
+//   // withTheme(),
+//   withStyles(styles)
+// ) (Header);

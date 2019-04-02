@@ -20,6 +20,9 @@ const styles = (theme: Theme) => ({
   },
   grow: {
     flexGrow: 1
+  },
+  AppBarUnderline: {
+    borderBottom: `2px solid ${theme.palette.secondary.main} `
   }
 });
 
@@ -46,7 +49,7 @@ const Navbar = (props: any) => {
 
   return (
     // sticky does the same as fixed, but the other components aren place under the navbar
-    <AppBar position="sticky">
+    <AppBar position="sticky" className={classes.AppBarUnderline} >
       <Toolbar>
         <Hidden smUp>
           <IconButton onClick={burgerClicked}>

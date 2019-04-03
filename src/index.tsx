@@ -6,19 +6,22 @@ import * as serviceWorker from './serviceWorker';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { BrowserRouter } from 'react-router-dom';
 
+
+
 const theme = createMuiTheme({
   palette: {
     primary: {
-       light: '#fff',
-       main: '#252934',
-       dark: '#000'
+      light: '#fff',
+      main: '#252934',
+      dark: '#000'
     },
     secondary: {
       main: '#04C2C9'
     },
     text: {
       primary: '#fff',
-      secondary: '#04C2C9'
+      secondary: '#04C2C9',
+   
     }
   },
   typography: {
@@ -26,7 +29,6 @@ const theme = createMuiTheme({
     useNextVariants: true
   }
 });
-
 
 
 

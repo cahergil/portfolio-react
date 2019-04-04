@@ -17,7 +17,11 @@ const styles = (props, theme) => ({
     // eslint-disable-next-line
     gridTemplateColumns: `${props.percentage}%` + `${hundred - props.percentage}%`,
     alignItems: 'center',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    '&:hover': {
+      transform: 'scale(1.1)'
+    },
+    transition: 'transform .3s'
   
   },
   cellSkill: {

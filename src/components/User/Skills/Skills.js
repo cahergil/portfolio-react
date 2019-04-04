@@ -53,7 +53,6 @@ const  Skills = (props) => {
                 right={index % 2 === 0 ? false : true}
               >
                 <Skill
-                  // key={index}
                   name={skill.name}
                   percentage={skill.percentage}
                   color={skill.color}

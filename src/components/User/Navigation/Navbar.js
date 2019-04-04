@@ -1,9 +1,12 @@
-import React from 'react'
-import { AppBar, Toolbar, Hidden, IconButton, Theme, Typography, withStyles } from '@material-ui/core';
+import React, { useEffect} from 'react'
+import { AppBar, Toolbar, Hidden, IconButton, Typography, withStyles } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { compose } from 'recompose';
+import scrollToElement from 'scroll-to-element';
 
-const styles = (theme: Theme) => ({
+
+const styles = (theme) => ({
   linkStyle: {
     textDecoration: 'none',
     '&:hover': {
@@ -26,18 +29,31 @@ const styles = (theme: Theme) => ({
   }
 });
 
-const Navbar = (props: any) => {
-  const { classes,burgerClicked } = props;
-
-  
+const Navbar = (props) => {
   const sections = ['Home', 'About', 'Skills', 'Projects', 'Location', 'Contact'];
-
+  const { classes,burgerClicked } = props;
+  
+  // is it enough to implement this functionality in this component
+  useEffect(() => {
+    jumpToHash();
+  });
+  
+  const jumpToHash = () => {
+    const hash = props.location.hash;
+    if (hash) {
+      if (hash === '#home') {
+        scrollToElement(hash, { offset: -100 });
+        return;
+      }
+      scrollToElement(hash, { offset: 0 });
+    }
+  }
 
  
   const toolbarSections = (
     sections.map((section, index) => {
       return (
-        <Link key={index} to={'#' + section.toLowerCase()}>
+        <Link key={index} to={'/#' + section.toLowerCase()}>
           <Typography className={`${classes.linkStyle} ${classes.marginRight}`}>
             {section.toUpperCase()}
           </Typography>
@@ -65,4 +81,8 @@ const Navbar = (props: any) => {
   );
 }
 
-export default withStyles(styles)(Navbar)
+// export default withStyles(styles)(Navbar)
+export default compose(
+  withRouter,
+  withStyles(styles)
+)(Navbar);

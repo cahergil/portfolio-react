@@ -1,12 +1,14 @@
-import { withStyles } from '@material-ui/core';
 import React from 'react';
+import { withStyles } from '@material-ui/core';
+
+
 import  Fade  from 'react-reveal/Fade';
 import  Slide  from 'react-reveal/Slide';
-
 import scssClasses from './Skills.module.scss';
 import TitleGrid from '../../TitleGrid';
 import Skill from './Skill/Skill';
 import { SkillModel } from './Skill.model';
+
 
 
 const styles = (theme) => ({
@@ -36,7 +38,10 @@ const skills = [
   new SkillModel('SQL', '80', '#795548'),
   new SkillModel('SASS', '55', '#E91E63')
 ];
-const  Skills = (props) => {
+const Skills = (props) => {
+ 
+
+  
   return (
     <section id="skills" className={scssClasses.Root}>
        <Fade duration={600} left>
@@ -69,3 +74,7 @@ const  Skills = (props) => {
 }
 
 export default withStyles(styles)(Skills);
+// export default compose(
+//   withRouter,
+//   withStyles(styles),
+// )(Skills);

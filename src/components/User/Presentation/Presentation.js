@@ -1,13 +1,15 @@
 import React from 'react'
+
 import {ICONS} from '../../../Icons/constants'
 import classesScss from './Presentation.module.scss'
 import ContactIcon from '../../ContactIcon';
 
-const Presentation = (props: any) => {
-  const { classes } = props;
- 
+const Presentation = (props) => {
+  // const { classes } = props;
+  
+
   return (
-    <section id={classesScss.presentation}>
+    <section id="home" className={classesScss.presentation}>
       <h1 className="heading-1">A little bit about me</h1>
       <h1 className="heading-1">Carlos</h1>
       <h2 className="heading-2">Front-End Web Developer</h2>

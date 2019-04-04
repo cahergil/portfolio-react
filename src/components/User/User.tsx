@@ -6,6 +6,7 @@ import { Theme, withStyles } from '@material-ui/core';
 import Presentation from './Presentation/Presentation';
 import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
+
 import FeaturedWork from './FeaturedWork/FeaturedWork';
 import Navbar from './Navigation/Navbar';
 import Location from './Location/Location';

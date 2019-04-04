@@ -51,7 +51,7 @@ const AboutMe = (props) => {
   return (
     <section id="about" className={classes.root}>
       <Fade duration={600} left>
-        <TitleGrid color="#000" lineLength="10rem" />
+        <TitleGrid title="About Me" color="#000" lineLength="10rem" />
       </Fade>
 
 

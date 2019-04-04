@@ -30,13 +30,13 @@ const styles = (props, theme) => ({
 
 
 
-const TitleGrid = ({classes}) => {
- 
+const TitleGrid = (props) => {
+    const {classes, title} = props
 
   return (
     <div className={classes.headingGrid}>
       <h1 className={classes.title}>
-        About me
+        {title}
       </h1>
       <div className={classes.underline}>
       </div>

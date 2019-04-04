@@ -1,10 +1,14 @@
-import React from 'react';
-import TitleGrid from '../../TitleGrid';
-import  Fade  from 'react-reveal/Fade';
 import { withStyles } from '@material-ui/core';
+import React from 'react';
+import  Fade  from 'react-reveal/Fade';
+import  Slide  from 'react-reveal/Slide';
+
 import scssClasses from './Skills.module.scss';
+import TitleGrid from '../../TitleGrid';
 import Skill from './Skill/Skill';
 import { SkillModel } from './Skill.model';
+
+
 const styles = (theme) => ({
  
   skillsGrid: {
@@ -21,7 +25,6 @@ const styles = (theme) => ({
 
 })
 
-// const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'Angular2+', 'Git', 'Java', 'SQL','SASS']
 const skills = [
   new SkillModel('JavaScript', '65', '#FFEB3B'),
   new SkillModel('HTML', '70', '#FF9800'),
@@ -43,11 +46,19 @@ const  Skills = (props) => {
         {
           skills.map((skill,index) => {
             return (
-              <Skill
+              <Slide
                 key={index}
-                name={skill.name}
-                percentage={skill.percentage}
-                color={skill.color} />              
+                duration={600}
+                left={index % 2 === 0 ? true : false}
+                right={index % 2 === 0 ? false : true}
+              >
+                <Skill
+                  // key={index}
+                  name={skill.name}
+                  percentage={skill.percentage}
+                  color={skill.color}
+                />
+              </Slide>
             );
           })
           

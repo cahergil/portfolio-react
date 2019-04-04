@@ -30,7 +30,7 @@ const skills = [
   new SkillModel('HTML', '70', '#FF9800'),
   new SkillModel('CSS', '70', '#3F51B5'),
   new SkillModel('React', '60', '#61DAFB'),
-  new SkillModel('Angular+2', '60', '#D32F2F'),
+  new SkillModel('Angular 2+', '60', '#D32F2F'),
   new SkillModel('Git', '60', '#616161'),
   new SkillModel('Java', '70', '#A4C639'),
   new SkillModel('SQL', '80', '#795548'),

@@ -43,6 +43,7 @@ const Skills = (props) => {
 
   
   return (
+    
     <section id="skills" className={scssClasses.Root}>
        <Fade duration={600} left>
         <TitleGrid title="My Skills" color="#fff" lineLength="10rem" />
@@ -69,7 +70,8 @@ const Skills = (props) => {
         }
 
       </div>
-    </section>
+      </section>
+    
   )
 }
 

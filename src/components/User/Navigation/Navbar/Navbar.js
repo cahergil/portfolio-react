@@ -1,4 +1,4 @@
-import React, { useEffect,useState} from 'react'
+import React, { useEffect, useReducer} from 'react'
 import { AppBar, Toolbar, Hidden, IconButton, withStyles } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import {Link, withRouter } from 'react-router-dom';
@@ -44,70 +44,74 @@ const styles = theme => ({
   }
 });
 
+const initialState = {
+  section: 'home'
+}
+
 const Navbar = (props) => {
- 
-  const [section, setSection] = useState('home');
-  // let section = 'home';
-  let byPassSpy = false;  
-  let hash = '';
+
+  const [state, dispatch] = useReducer(reducer, initialState)
   const offset = 100;
   const sections = ['Home', 'About', 'Skills', 'Projects', 'Location', 'Contact'];
   const { classes, burgerClicked } = props;
   
-  // is it enough to implement this functionality in this component
+
   // useEffect(() => {
   //   //  console.log(props);
-  //   //  jumpToHash();
+  //    jumpToHash();
   // });
 
-  // didMount() willUnmount()
+  function reducer(state, action) {
+    if (action.type === 'change_section') {
+      return {
+        ...state,
+        section: action.payload
+      }
+    }
+  }
+
+  // didMount() willUnmount(), because dispatch is constant, a way of decoupling effects
+  // from state
   useEffect(() => {
+    console.log('create interval #############')
     const timer = setInterval(() => spy(), 100);
     return () => {
+      console.log('clear interval #############')
       clearInterval(timer);
     }
-  }, []);
- 
-  // useEffect(() => {
-    
-  //   if (timer) {
-  //     clearInterval(timer);
-  //   }
-  //   timer = setInterval(() => spy(), 100);
-   
-  // });
+  }, [dispatch]);
  
    
-  const jumpToHash = () => {
+  const jumpToHash = (hash) => {
     
-    
+    // previous implementation!  
     // when the Link is clicked sets the props.location.hash ='#something'
     // after that it performs a render, and after that the effect is called
     // this function reads this and scrolls to that hash
     // console.log(props.location);
-    hash = props.location.hash;
-    // console.log('insideJumptohash, hash', hash);
+    // hash = props.location.hash;
+    console.log('insideJumptohash, hash', hash);
     if (hash) {
-       byPassSpy = true
-       console.log('beginjumpToHash, bypassSpy', byPassSpy);
+      dispatch({ type: 'change_section', payload: hash.substring(1) });
+      localStorage.setItem('byPassSpy', 'true');
       // // the default duration of scrollToElement is 1000ms 
       // // https://www.npmjs.com/package/scroll-to-element
       // // console.log('beforesetTimeout');
       setTimeout(() => {
-        byPassSpy = false
-        // bypassSpy = false;
-        console.log('endSetTimeout, bypassSpy',byPassSpy);
-      }, 5000);
+        localStorage.setItem('byPassSpy', 'false');
+     
+      }, 1000);
 
       if (hash === '#home') {
-        scrollToElement(hash, { offset: -100, duration: 5000 });
-        // window.location.hash = ''
+        console.log('scroll to home');
+        scrollToElement(hash, { offset: -100, duration: 1000 });
+       
       } else {
-
-        scrollToElement(hash, { offset: 0, duration: 5000 });
+        console.log('scroll to other');
+        scrollToElement(hash, { offset: 0, duration: 1000 });
       }
   
-      // // spy executes each 400ms, and it causes a rerender(because changes the state)
+     
       // // void the hash so that it doesn't jump to the previous hash
       props.location.hash = ''
    
@@ -116,7 +120,6 @@ const Navbar = (props) => {
   }
 
   const spy = () => {
-     console.log('inside spy, bypassSpy',byPassSpy);
     
     for (let i = 0; i < sections.length; i++) {
       const sectionLocal = sections[i].toLowerCase();
@@ -125,11 +128,10 @@ const Navbar = (props) => {
       if (element) {
         
         const rect = element.getBoundingClientRect();
- 
-        if (rect.bottom >= offset && !byPassSpy) {
+        const byPassSpy =localStorage.getItem('byPassSpy')
+        if (rect.bottom >= offset && byPassSpy !== 'true') {
           
-          setSection(section)
-          // console.log('settingSection',bypassSpy);
+          dispatch({ type: 'change_section', payload: sectionLocal });
           break;
         }
       }
@@ -153,8 +155,10 @@ const Navbar = (props) => {
                     pathname: '/',
                     hash: '#' + sectionElement.toLowerCase()
                   }}
-                  onClick={jumpToHash}
-                  style={{ color: section === sectionElement.toLowerCase() ? '#04C2C9':'#fff'}}
+                  // pressing Link causes a render, we can caputre props.location.hash
+                  // with onClick this is not necessary
+                  onClick={() => jumpToHash('#' + sectionElement.toLowerCase())}
+                  style={{ color: state.section === sectionElement.toLowerCase() ? '#04C2C9':'#fff'}}
                   className={`${classes.linkStyle} ${
                     classes.marginRight
                   }`}
@@ -190,7 +194,6 @@ const Navbar = (props) => {
   );
 }
 
-// export default withStyles(styles)(Navbar)
 export default compose(
   withRouter,
   withStyles(styles)

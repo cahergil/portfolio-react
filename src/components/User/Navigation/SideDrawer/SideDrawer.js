@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const drawerWidth = 150;
 
-const styles = (theme: Theme) => ({
+const styles = (theme) => ({
   
   linkStyle: {
     textDecoration: 'none',
@@ -21,7 +21,7 @@ const styles = (theme: Theme) => ({
 });
 
 
-const SideDrawer = (props: any) => {
+const SideDrawer = (props) => {
   const { classes } = props;
   
 

@@ -8,11 +8,10 @@ import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
 
 import FeaturedWork from './FeaturedWork/FeaturedWork';
-import Navbar from './Navigation/Navbar';
+import Navbar from './Navigation/Navbar/Navbar';
 import Location from './Location/Location';
 import ContactMe from './ContactMe/ContactMe';
-import Header from './Header/Header';
-import SideDrawer from './Navigation/SideDrawer';
+import SideDrawer from './Navigation/SideDrawer/SideDrawer';
 
 const styles = (theme: Theme) => ({
   container: {

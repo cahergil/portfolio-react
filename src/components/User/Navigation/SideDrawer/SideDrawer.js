@@ -1,17 +1,31 @@
 import React from 'react';
-import { Hidden, Drawer, List, ListItem, Typography, Theme, withStyles } from '@material-ui/core';
+import { Hidden, Drawer, withStyles } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 150;
 
-const styles = (theme) => ({
-  
+const styles = theme => ({
+  navStyle: {
+    margin: '1.6rem'
+  },
+  ulStyle: {
+    listStyle: 'none',
+    margin: 0,
+    padding: 0
+  },
+  liStyle: {
+    display: 'block',
+    margin: '1.6rem 0'
+  },
   linkStyle: {
     textDecoration: 'none',
-    '&:hover': {
-      color: theme.palette.text.secondary
+    '&:link,&:visited': {
+      color: theme.palette.text.primary
     },
-
+    '&:hover,&:active': {
+      color: theme.palette.text.secondary + ' !important'
+    },
+    fontSize: '1.5rem',
     transition: '200ms color'
   },
   drawerPaper: {
@@ -22,31 +36,36 @@ const styles = (theme) => ({
 
 
 const SideDrawer = (props) => {
-  const { classes } = props;
+  const { classes,sections,scrollSection, clickedSection } = props;
   
-
-  const sections = ['Home', 'About', 'Skills', 'Projects', 'Location', 'Contact'];
-
-  
-
-
   const drawerSections = (
-    <List>
+    <nav className={classes.navStyle}>
+      <ul className={classes.ulStyle}>
       {
-        sections.map((section, index) => {
+        sections.map((sectionElement, index) => {
           return (
-            <ListItem key={index}>
-              <Link key={index} to={'#' + section.toLowerCase()}>
-                <Typography
-                  className={classes.linkStyle}>
-                  {section.toUpperCase()}
-                </Typography>
+            <li key={index} className={classes.liStyle}>
+              <Link
+                key={index}
+                to={{
+                  pathname: '/'
+                
+                }}
+                onClick={() => 
+                  clickedSection('#' + sectionElement.toLowerCase(), true)
+                }
+                style={{ color: scrollSection === sectionElement.toLowerCase() ? '#04C2C9' : '#fff' }}
+                className={classes.linkStyle}>
+                              
+                  {sectionElement.toUpperCase()}
+                
               </Link>
-            </ListItem>
+            </li>
           );
         })
       }
-    </List>
+      </ul>
+    </nav>
 
   )
 

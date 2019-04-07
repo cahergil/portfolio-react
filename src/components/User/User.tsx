@@ -6,12 +6,10 @@ import { Theme, withStyles } from '@material-ui/core';
 import Presentation from './Presentation/Presentation';
 import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
-
 import FeaturedWork from './FeaturedWork/FeaturedWork';
-import Navbar from './Navigation/Navbar/Navbar';
 import Location from './Location/Location';
 import ContactMe from './ContactMe/ContactMe';
-import SideDrawer from './Navigation/SideDrawer/SideDrawer';
+import NavDrawer from './Navigation/NavDrawer';
 
 const styles = (theme: Theme) => ({
   container: {
@@ -31,21 +29,15 @@ const styles = (theme: Theme) => ({
 const User = (props: any) => {
  
   const { classes } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+ 
 
-  function handleDrawerToggle() {
-    console.log('andledrawtertoggle');
-    setMobileOpen(!mobileOpen);
-  }
+
 
   return (
     <React.Fragment>
       
-     
-      <Navbar burgerClicked={handleDrawerToggle}/>
-      <SideDrawer
-        mobileOpen={mobileOpen}
-        onClose={handleDrawerToggle} />
+      <NavDrawer />
+
       <main className={classes.container}>
         <Presentation />
         <AboutMe />

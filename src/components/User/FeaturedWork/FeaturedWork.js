@@ -21,46 +21,52 @@ const styles = (theme) => ({
 
 const project1 = new Project(
   'portfolio.png',
-  'Portfolio project',
+  'Portfolio Angular project',
   'Angular 7, Sass',
-  'www.carloshernandezgil.com'
+  'http://carloshernandezgil.com'
 );
 const project2 = new Project(
+  'portfolio_react.png',
+  'Portfolio React project',
+  'React, Material UI, Sass',
+  'http://carloshernandezgil.com'
+);
+const project3 = new Project(
   'mg.png',
   'memory game',
   'CSS, HTML and JavaScript',
   'https://cahergil.github.io/memorygame/',
   'https://github.com/cahergil/memory-game'
 );
-const project3 = new Project(
+const project4 = new Project(
   'arcade-game.png',
   'Frogger game',
   'CSS, HTML canvas and OOJS, only Desktop',
   'https://cahergil.github.io/froggergame/',
   'https://github.com/cahergil/arcade-game'
 );
-const project4 = new Project(
+const project5 = new Project(
   'farmacias1.png',
   'Farmaex',
   'Android app',
   'https://play.google.com/store/apps/details?id=com.chernandezgil.farmacias&hl=es',
   'https://github.com/cahergil/Farmacias'
 );
-const project5 = new Project(
-  'restaurants_review.png',
-  'Restaurant reviews',
-  'CSS, HTML, JavaScript',
-  'https://cahergil.github.io/rreviews/index.html',
-  'https://github.com/cahergil/restaurant-reviews'
-);
-const project6 = new Project(
+// const project6 = new Project(
+//   'restaurants_review.png',
+//   'Restaurant reviews',
+//   'CSS, HTML, JavaScript',
+//   'https://cahergil.github.io/rreviews/index.html',
+//   'https://github.com/cahergil/restaurant-reviews'
+// );
+const project7 = new Project(
   'myreads.png',
   'Book tracking app',
   'React, React Router',
   'https://cahergil.github.io/myreads-book-tracking/#/',
   'https://github.com/cahergil/myreads-book-tracking'
 );
-const project7 = new Project(
+const project8 = new Project(
   'neighborhood_small.png',
   'Spains national parks',
   'React',
@@ -68,7 +74,7 @@ const project7 = new Project(
   'https://github.com/cahergil/neighborhood-map'
 );
 const projects = [];
-projects.push(project1, project2, project3, project4, project5, project6, project7);
+projects.push(project1, project2, project3, project4, project5, project7, project8);
 
 
 const FeaturedWork = (props) => {

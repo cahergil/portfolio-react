@@ -44,8 +44,8 @@ const User = (props: any) => {
         <AboutMe />
         <Skills />
         <FeaturedWork />
-        {/* <Location /> */}
-        {/* <ContactMe /> */}
+        <Location /> 
+        <ContactMe />
       </main>
     </React.Fragment>
   );

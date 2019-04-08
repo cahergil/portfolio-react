@@ -74,7 +74,7 @@ projects.push(project1, project2, project3, project4, project5, project6, projec
 const FeaturedWork = (props) => {
 
   return (
-    <section id="featured-work" className={props.classes.root}>
+    <section id="projects" className={props.classes.root}>
       <Fade duration={600} right>
         <TitleGrid title="Featured work" color="#000" lineLength="15rem" />
       </Fade> 

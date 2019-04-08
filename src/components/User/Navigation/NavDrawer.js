@@ -85,7 +85,7 @@ const NavDrawer = (props) => {
     let sectionLocal;
     let byPassSpy;
     let rect;
-    const candidates = [];
+    const candidates = [{section: 'home'}];
     for (let i = 0; i < sections.length; i++) {
       sectionLocal = sections[i].toLowerCase();
       const element = document.getElementById(sectionLocal);

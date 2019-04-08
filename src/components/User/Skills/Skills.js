@@ -14,14 +14,20 @@ import { SkillModel } from './Skill.model';
 const styles = (theme) => ({
  
   skillsGrid: {
-
+    width: '100%',
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(40rem, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(45rem, 1fr))',
+    [theme.breakpoints.down('sm')]: {
+      gridTemplateColumns: 'repeat(auto-fit, minmax(30rem, 1fr))',
+    },
     gridColumnGap: '0rem',
     gridRowGap: '5rem',
     justifyContent: 'center',
     justifyItems: 'center',
     padding: '0 10vw',
+    [theme.breakpoints.down(500)]: {
+      padding: '0 0'
+    },
     marginBottom: '10rem'
   }
 
@@ -56,8 +62,7 @@ const Skills = (props) => {
                 key={index}
                 duration={600}
                 left={index % 2 === 0 ? true : false}
-                right={index % 2 === 0 ? false : true}
-              >
+                right={index % 2 === 0 ? false : true} >
                 <Skill
                   name={skill.name}
                   percentage={skill.percentage}

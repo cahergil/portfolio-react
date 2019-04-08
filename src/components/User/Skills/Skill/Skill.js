@@ -8,12 +8,12 @@ const styles = (props, theme) => ({
   skillGrid: {
     height: '5rem',
     width: '40rem',
+    [theme.breakpoints.down('sm')]: {
+      width: '30rem'
+    },
     backgroundColor: '#ccc',
     borderRadius: '6px',
     display: 'grid',
-    // gridTemplateColumns: `${props.percentage}%`  ('100%' - `${props.percentage}%`),
-    // gridTemplateColumns: `${props.percentage}%`  `${props.percentage}%`,
-    
     // eslint-disable-next-line
     gridTemplateColumns: `${props.percentage}%` + `${hundred - props.percentage}%`,
     alignItems: 'center',
@@ -44,7 +44,8 @@ const styles = (props, theme) => ({
 const Skill = (props) => {
 
   return (
-    <div className={props.classes.skillGrid}>
+    
+     <div className={props.classes.skillGrid}> 
       <div className={props.classes.cellSkill}>{props.name}</div>
       <div className={props.classes.cellPercentage}>{props.percentage}%</div>
     </div>

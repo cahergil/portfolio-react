@@ -10,9 +10,11 @@ import 'animate.css/animate.min.css';
 
 const styles = theme => ({
   root: {
+    width: '100%',
     marginBottom: '10rem'
   },
   responsiveGrid: {
+    width: '100%',
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(25rem, 1fr))',
     gridColumnGap: '3rem',
@@ -42,7 +44,6 @@ const styles = theme => ({
     color: '#999',
     marginBottom: '1rem'
   }
-  
 });
 
 

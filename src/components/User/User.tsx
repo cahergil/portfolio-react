@@ -13,6 +13,7 @@ import NavDrawer from './Navigation/NavDrawer';
 
 const styles = (theme: Theme) => ({
   container: {
+    width: '100%',
     display: 'grid',
     // default case when >550 && < 600
     gridTemplateRows: 'calc(100vh - 4rem) repeat(5, min-content)',
@@ -43,8 +44,8 @@ const User = (props: any) => {
         <AboutMe />
         <Skills />
         <FeaturedWork />
-        <Location />
-        <ContactMe />
+        {/* <Location /> */}
+        {/* <ContactMe /> */}
       </main>
     </React.Fragment>
   );

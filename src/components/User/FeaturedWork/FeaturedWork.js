@@ -12,7 +12,12 @@ const styles = (theme) => ({
 
   projectsGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(28rem, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(35rem, 1fr))',
+    [theme.breakpoints.down(820)]: {
+      gridTemplateColumns: '35rem',
+      justifyContent: 'center'
+
+    },
     gridColumnGap: '2rem',
     gridRowGap: '2rem',
     padding: '0 5vw'

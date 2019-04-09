@@ -10,6 +10,7 @@ import FeaturedWork from './FeaturedWork/FeaturedWork';
 import Location from './Location/Location';
 import ContactMe from './ContactMe/ContactMe';
 import NavDrawer from './Navigation/NavDrawer';
+import Footer from './Footer/Footer';
 
 const styles = (theme: Theme) => ({
   container: {
@@ -46,6 +47,7 @@ const User = (props: any) => {
         <FeaturedWork />
         <Location /> 
         <ContactMe />
+        <Footer />
       </main>
     </React.Fragment>
   );

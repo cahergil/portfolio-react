@@ -36,7 +36,7 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
-    <Router>
+    <Router basename="/portfolio-react">
       <App />
     </Router>
   </MuiThemeProvider>,

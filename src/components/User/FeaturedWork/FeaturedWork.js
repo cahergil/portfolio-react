@@ -1,5 +1,7 @@
 import React from 'react'
-import  Fade  from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+
 import TitleGrid from '../../TitleGrid';
 import { withStyles } from '@material-ui/core';
 import { Project } from './Project.model';
@@ -93,15 +95,16 @@ const FeaturedWork = (props) => {
         {
           projects.map((project, index) => {
             return (
-              <FeaturedWorkItem
-                key={index}
-                i={index}
-                imagePath={project.imagePath} 
-                name={project.name}
-                technologies={project.technologies}
-                url={project.url}
-                githubPath={project.githubPath}
-              />  
+              <Zoom key={index} clear >
+                <FeaturedWorkItem
+                  i={index}
+                  imagePath={project.imagePath} 
+                  name={project.name}
+                  technologies={project.technologies}
+                  url={project.url}
+                  githubPath={project.githubPath}
+                  />  
+              </Zoom>
             );  
           })
         }

@@ -36,7 +36,7 @@ const project2 = new Project(
   'portfolio_react.png',
   'Portfolio React project',
   'React, Material UI, Sass',
-  'http://carloshernandezgil.com'
+  'https://cahergil.github.io/portfolio-react'
 );
 const project3 = new Project(
   'mg.png',

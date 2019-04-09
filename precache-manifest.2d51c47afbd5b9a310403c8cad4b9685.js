@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/feed_reader.07affe68.png"
   },
   {
-    "revision": "9ba5493709f5e2876a1f",
+    "revision": "785c925b42d837126374",
     "url": "/portfolio-react/static/css/main.6ba1b294.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/farmacias1.23275e81.png"
   },
   {
-    "revision": "9ba5493709f5e2876a1f",
-    "url": "/portfolio-react/static/js/main.8f8a9c28.chunk.js"
+    "revision": "785c925b42d837126374",
+    "url": "/portfolio-react/static/js/main.84ca0cd1.chunk.js"
   },
   {
     "revision": "3f70ed57e8fea0bf10b84f14b0a0bf2f",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/css/2.54c47512.chunk.css"
   },
   {
-    "revision": "dda1f826b89375c308c5d721e4640312",
+    "revision": "629fd2f4d07872a812ab7239668067ef",
     "url": "/portfolio-react/index.html"
   }
 ];

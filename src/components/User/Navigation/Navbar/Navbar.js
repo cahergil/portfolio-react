@@ -41,6 +41,16 @@ const styles = theme => ({
   },
   activeLink: {
      color: theme.palette.secondary.main
+  },
+  iconWrapper: {
+    [theme.breakpoints.up(650)]: {
+      display: 'none'
+    }
+  },
+  sectionsWrapper: {
+    [theme.breakpoints.down(650)]: {
+      display: 'none'
+    }
   }
 });
 
@@ -91,16 +101,16 @@ const Navbar = (props) => {
     
     // sticky does the same as fixed, but the other components aren place under the navbar
     <AppBar position="sticky" className={classes.AppBarUnderline} >
-      <Toolbar>
-        <Hidden smUp>
-          <IconButton onClick={burgerClicked}>
-            <MenuIcon className={classes.white} />
-          </IconButton>
-        </Hidden>
-        <Hidden xsDown>
-          <div className={classes.grow} />
-          {toolbarSections}
-        </Hidden>
+       <Toolbar>
+         <div className={classes.iconWrapper}>
+            <IconButton onClick={burgerClicked}>
+              <MenuIcon className={classes.white} />
+           </IconButton>
+         </div>
+        <div className={classes.grow} />
+        <div className={classes.sectionsWrapper}>
+           {toolbarSections}
+         </div>
       </Toolbar>
     </AppBar>
   );

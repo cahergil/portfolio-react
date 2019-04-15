@@ -19,6 +19,7 @@ const NavDrawer = (props) => {
     'Home',
     'About',
     'Skills',
+    'Education',
     'Projects',
     'Location',
     'Contact'

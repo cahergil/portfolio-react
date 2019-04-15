@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "07affe68cc105ca42e2f47596b967006",
-    "url": "/portfolio-react/static/media/feed_reader.07affe68.png"
+    "revision": "23275e814a166cf391f1ade303c2fa5b",
+    "url": "/portfolio-react/static/media/farmacias1.23275e81.png"
   },
   {
-    "revision": "785c925b42d837126374",
-    "url": "/portfolio-react/static/css/main.6ba1b294.chunk.css"
+    "revision": "34cf3261715b5070fe91",
+    "url": "/portfolio-react/static/css/main.2541872a.chunk.css"
   },
   {
     "revision": "11528ddda4154ce1e32b",
@@ -16,16 +16,24 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/twitter.e58b10be.svg"
   },
   {
-    "revision": "4d19dce06ef73b77ef18",
-    "url": "/portfolio-react/static/js/2.cfd95f57.chunk.js"
+    "revision": "1b69f38786a89fd7c529",
+    "url": "/portfolio-react/static/js/2.3002fa21.chunk.js"
+  },
+  {
+    "revision": "9512477b5191e76d020c954314b28b71",
+    "url": "/portfolio-react/static/media/desktop.9512477b.jpg"
   },
   {
     "revision": "d8541b7e0b507635351758283281f526",
     "url": "/portfolio-react/static/media/carnet_clipped.d8541b7e.jpg"
   },
   {
-    "revision": "9512477b5191e76d020c954314b28b71",
-    "url": "/portfolio-react/static/media/desktop.9512477b.jpg"
+    "revision": "6a3c631dde6e673b090ada794a4e9bba",
+    "url": "/portfolio-react/static/media/Curriculum_Carlos_Hernández_Gil.6a3c631d.pdf"
+  },
+  {
+    "revision": "e6a4f3c6bf932ade6af18108cd2cc4ad",
+    "url": "/portfolio-react/static/media/Resume_Carlos_Hernández_Gil.e6a4f3c6.pdf"
   },
   {
     "revision": "77ce1914b109486e4409e870e1ab260b",
@@ -40,12 +48,12 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/arcade-game.6639f5af.png"
   },
   {
-    "revision": "23275e814a166cf391f1ade303c2fa5b",
-    "url": "/portfolio-react/static/media/farmacias1.23275e81.png"
+    "revision": "34cf3261715b5070fe91",
+    "url": "/portfolio-react/static/js/main.4526b834.chunk.js"
   },
   {
-    "revision": "785c925b42d837126374",
-    "url": "/portfolio-react/static/js/main.84ca0cd1.chunk.js"
+    "revision": "07affe68cc105ca42e2f47596b967006",
+    "url": "/portfolio-react/static/media/feed_reader.07affe68.png"
   },
   {
     "revision": "3f70ed57e8fea0bf10b84f14b0a0bf2f",
@@ -84,11 +92,11 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/symbol-defs.b0ff32ab.svg"
   },
   {
-    "revision": "4d19dce06ef73b77ef18",
+    "revision": "1b69f38786a89fd7c529",
     "url": "/portfolio-react/static/css/2.54c47512.chunk.css"
   },
   {
-    "revision": "629fd2f4d07872a812ab7239668067ef",
+    "revision": "467415f137bf95e6ac2441dbf147b753",
     "url": "/portfolio-react/index.html"
   }
 ];

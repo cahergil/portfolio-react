@@ -11,6 +11,7 @@ import Location from './Location/Location';
 import ContactMe from './ContactMe/ContactMe';
 import NavDrawer from './Navigation/NavDrawer';
 import Footer from './Footer/Footer';
+import Education from './Education/Education';
 
 const styles = (theme: Theme) => ({
   container: {
@@ -44,6 +45,7 @@ const User = (props: any) => {
         <Presentation />
         <AboutMe />
         <Skills />
+        <Education />
         <FeaturedWork />
         <Location /> 
         <ContactMe />

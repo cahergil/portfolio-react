@@ -12,7 +12,6 @@ const styles = theme => ({
     height: '100vh',
     width: '100%',
     backgroundColor: theme.palette.primary.main
-    // marginBottom: '10rem'
   },
   contactRectangle: {
     height: '5vw',
@@ -21,12 +20,14 @@ const styles = theme => ({
   contactEnvelope: {
     marginTop: '-1px',
     height: '10vw',
-    backgroundImage: 'linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1))',
+    backgroundImage:
+      'linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1))',
     clipPath: 'polygon(50% 10vw, 0 0, 100% 0)'
   },
   buttonStyle: {
     // to center the button on the screen
-    textAlign: 'center'
+    textAlign: 'center',
+    // marginBottom: '10rem'
   },
   rightIcon: {
     marginLeft: theme.spacing.unit

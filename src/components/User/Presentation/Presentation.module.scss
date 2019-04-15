@@ -36,3 +36,43 @@
               }
             }
   }
+
+   .wrapper__download {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+          grid-gap: 1rem;
+          justify-content: center;
+          font-family: $font-display;
+           margin-bottom: 5rem;
+          
+
+
+          // }
+          // &-esp {
+          //   // @include button-download();
+          //   &:hover {
+          //     .header__download-icon {
+          //       animation: up-down 2000ms infinite;
+          //   }
+          // }
+         // }
+          // &-eng {
+          //   // @include button-download();
+          //   &:hover {
+          //     .header__download-icon {
+          //       animation: up-down 2000ms infinite;
+          //     }
+          //   }
+          // }
+
+
+
+        } // &__download
+        // @media screen and (max-width: 600px) {
+        //   &__download {
+        //     grid-template-columns: 1fr;
+        //     grid-template-rows: repeat(2, 1fr);
+        //   }
+        // }

@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/farmacias1.23275e81.png"
   },
   {
-    "revision": "34cf3261715b5070fe91",
-    "url": "/portfolio-react/static/css/main.2541872a.chunk.css"
+    "revision": "cd9fa32a85a6c724eb7d",
+    "url": "/portfolio-react/static/css/main.940fa1c4.chunk.css"
   },
   {
     "revision": "11528ddda4154ce1e32b",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/arcade-game.6639f5af.png"
   },
   {
-    "revision": "34cf3261715b5070fe91",
+    "revision": "cd9fa32a85a6c724eb7d",
     "url": "/portfolio-react/static/js/main.4526b834.chunk.js"
   },
   {
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/css/2.54c47512.chunk.css"
   },
   {
-    "revision": "467415f137bf95e6ac2441dbf147b753",
+    "revision": "81cd5061672de513e25fa04c911a3c35",
     "url": "/portfolio-react/index.html"
   }
 ];

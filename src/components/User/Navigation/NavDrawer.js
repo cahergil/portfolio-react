@@ -33,8 +33,7 @@ const NavDrawer = (props) => {
     localStorage.clear();
  
     const timer = setInterval(() => spy(), 100);
-    return () => {
-      clearInterval(timer);
+    return () => {      clearInterval(timer);
     }
   }, [dispatch]);
 

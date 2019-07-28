@@ -25,6 +25,7 @@ const styles = theme => ({
   image: {
     width: '100%',
     maxHeight: '30rem',
+    objectFit: 'cover',
     transition: 'all 0.3s'
   },
   description: {

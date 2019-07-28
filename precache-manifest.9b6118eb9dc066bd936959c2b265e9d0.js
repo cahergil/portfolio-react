@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "23275e814a166cf391f1ade303c2fa5b",
-    "url": "/portfolio-react/static/media/farmacias1.23275e81.png"
+    "revision": "3f70ed57e8fea0bf10b84f14b0a0bf2f",
+    "url": "/portfolio-react/static/media/github.3f70ed57.svg"
   },
   {
-    "revision": "cd9fa32a85a6c724eb7d",
-    "url": "/portfolio-react/static/css/main.940fa1c4.chunk.css"
+    "revision": "a1fe8cbed93faf8ed42b",
+    "url": "/portfolio-react/static/css/main.eae96391.chunk.css"
   },
   {
     "revision": "11528ddda4154ce1e32b",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/twitter.e58b10be.svg"
   },
   {
-    "revision": "1b69f38786a89fd7c529",
-    "url": "/portfolio-react/static/js/2.3002fa21.chunk.js"
+    "revision": "1ea01235c937a80bf68f",
+    "url": "/portfolio-react/static/js/2.afeda515.chunk.js"
   },
   {
     "revision": "9512477b5191e76d020c954314b28b71",
@@ -48,16 +48,20 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/arcade-game.6639f5af.png"
   },
   {
-    "revision": "cd9fa32a85a6c724eb7d",
-    "url": "/portfolio-react/static/js/main.4526b834.chunk.js"
+    "revision": "23275e814a166cf391f1ade303c2fa5b",
+    "url": "/portfolio-react/static/media/farmacias1.23275e81.png"
   },
   {
     "revision": "07affe68cc105ca42e2f47596b967006",
     "url": "/portfolio-react/static/media/feed_reader.07affe68.png"
   },
   {
-    "revision": "3f70ed57e8fea0bf10b84f14b0a0bf2f",
-    "url": "/portfolio-react/static/media/github.3f70ed57.svg"
+    "revision": "a1fe8cbed93faf8ed42b",
+    "url": "/portfolio-react/static/js/main.54856219.chunk.js"
+  },
+  {
+    "revision": "d1dd6b7f9befee363d9cf273f35aff79",
+    "url": "/portfolio-react/static/media/media_content.d1dd6b7f.png"
   },
   {
     "revision": "6f1e3677f981891ec62bbffd9d22a8f1",
@@ -88,15 +92,23 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/skills.4df93619.jpg"
   },
   {
+    "revision": "ba5eefb4111b0f28b546f801b9a81d94",
+    "url": "/portfolio-react/static/media/spain_beaches_angular.ba5eefb4.png"
+  },
+  {
+    "revision": "07d5a87b7a130575bb5d6a489ed81856",
+    "url": "/portfolio-react/static/media/spain_beaches_react.07d5a87b.png"
+  },
+  {
     "revision": "b0ff32ab8cd5a92f77626117c0b80d2b",
     "url": "/portfolio-react/static/media/symbol-defs.b0ff32ab.svg"
   },
   {
-    "revision": "1b69f38786a89fd7c529",
-    "url": "/portfolio-react/static/css/2.54c47512.chunk.css"
+    "revision": "1ea01235c937a80bf68f",
+    "url": "/portfolio-react/static/css/2.61afde24.chunk.css"
   },
   {
-    "revision": "81cd5061672de513e25fa04c911a3c35",
+    "revision": "779340fad3c69f3750e17df84bb38b4c",
     "url": "/portfolio-react/index.html"
   }
 ];

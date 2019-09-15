@@ -43,7 +43,7 @@ const project2 = new Project(
 const project3a = new Project(
   'spain_beaches_react.png',
   'Spain Beaches React',
-  'React 16.8.6, Redux, React Router, Material UI',
+  'React 16.9.0, Redux, Flow, React Testing Library, Cypress, Material UI',
   'https://cahergil.github.io/spain-beaches-react/',
   'https://github.com/cahergil/spain-beaches-react'
 );

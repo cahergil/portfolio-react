@@ -1,8 +1,10 @@
 import React from 'react';
 import { withStyles, Link } from '@material-ui/core';
+
 import classesScss from './FeaturedWorkItem.module.scss';
 import { ICONS } from './../../../../Icons/constants';
 import  SvgIcon  from '@material-ui/core/SvgIcon';
+import TechItem from './TechItem/TechItem';
 
 const styles = theme => ({
   root: {
@@ -44,16 +46,27 @@ const styles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     opacity: '0',
+    textAlign: 'center',
     visibility: 'hidden',
     transition: 'all .3s'
   },
   descriptionName: {
     textTransform: 'capitalize',
     fontWeight: '500',
-    color: theme.palette.primary.dark
+    color: theme.palette.primary.dark,
+    opacity: '0.87',
+    fontSize: '2rem'
   },
   descriptionTechnologies: {
-    color: '#777'
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    '& > *': {
+       margin: '2px 3px'
+    }
+    // color: '#777'
   },
   descriptionLink: {
     marginBottom: '1rem'
@@ -72,7 +85,7 @@ const styles = theme => ({
 
 const FeaturedWorkItem = (props) => {
   const { classes, imagePath, name, technologies, url,i,githubPath } = props;
-
+  const techItems = technologies.split(',');
   return (
     <div className={classes.root}>
       <img
@@ -82,7 +95,11 @@ const FeaturedWorkItem = (props) => {
       />
       <div className={classes.description}>
         <p className={classes.descriptionName}>{name}</p>
-        <p className={classes.descriptionTechnologies}>{technologies}</p>
+        <div className={classes.descriptionTechnologies}>
+           { techItems.map((techItem,i) => <TechItem key={i} techItem={techItem} />
+             
+           )}
+        </div>
         <Link href={githubPath} className={classes.descriptionLink}>
           
             <SvgIcon

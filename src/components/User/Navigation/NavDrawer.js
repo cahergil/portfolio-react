@@ -110,7 +110,7 @@ const NavDrawer = (props) => {
           payload: section
         });
         // window.location.hash = '#' + section;
-        console.log('hit');
+        
         prevSection = section;
         
       }

@@ -77,7 +77,7 @@ const AboutMe = (props) => {
             <br />
             <br />
             I have been writing Frontend code and taking trainning for
-            12 months now, and my prefered frameworks are Angular and React,
+            a year and a half now, and my prefered frameworks are Angular and React,
             in no strict order. I have a passion for Frontend because it
             allows a certain grade of creativity while at the same time
             requires a high level of mastery in a wide variety of

@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/github.3f70ed57.svg"
   },
   {
-    "revision": "a1fe8cbed93faf8ed42b",
+    "revision": "efb4d70b4c365ed4b084",
     "url": "/portfolio-react/static/css/main.eae96391.chunk.css"
   },
   {
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/carnet_clipped.d8541b7e.jpg"
   },
   {
-    "revision": "6a3c631dde6e673b090ada794a4e9bba",
-    "url": "/portfolio-react/static/media/Curriculum_Carlos_Hernández_Gil.6a3c631d.pdf"
+    "revision": "3b337c6cd11a24be166636a8e6d60a0c",
+    "url": "/portfolio-react/static/media/Curriculum_Carlos_Hernández_Gil.3b337c6c.pdf"
   },
   {
-    "revision": "e6a4f3c6bf932ade6af18108cd2cc4ad",
-    "url": "/portfolio-react/static/media/Resume_Carlos_Hernández_Gil.e6a4f3c6.pdf"
+    "revision": "211b3b9b4ffadb2123823c84c394ab1e",
+    "url": "/portfolio-react/static/media/Resume_Carlos_Hernández_Gil.211b3b9b.pdf"
   },
   {
     "revision": "77ce1914b109486e4409e870e1ab260b",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/media/feed_reader.07affe68.png"
   },
   {
-    "revision": "a1fe8cbed93faf8ed42b",
-    "url": "/portfolio-react/static/js/main.54856219.chunk.js"
+    "revision": "efb4d70b4c365ed4b084",
+    "url": "/portfolio-react/static/js/main.5d87e758.chunk.js"
   },
   {
     "revision": "d1dd6b7f9befee363d9cf273f35aff79",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/portfolio-react/static/css/2.61afde24.chunk.css"
   },
   {
-    "revision": "779340fad3c69f3750e17df84bb38b4c",
+    "revision": "2c3a87b751981ace96093f4380372e1a",
     "url": "/portfolio-react/index.html"
   }
 ];

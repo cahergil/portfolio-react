@@ -50,7 +50,7 @@ const project3a = new Project(
 const project3b = new Project(
   'spain_beaches_angular.png',
   'Spain Beaches Angular',
-  'Angular 7.2.0, Ngrx, Angular Material, Sass',
+  'Angular 7.2.0, Ngrx, Angular Material, Sass, Unit Testing',
   'https://cahergil.github.io/spain-beaches-angular/',
   'https://github.com/cahergil/spain-beaches-angular'
 );

@@ -17,7 +17,7 @@
     "animate.css": "^3.7.0",
     "babel-eslint": "^9.0.0",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-animate-on-scroll": "^2.1.5",
